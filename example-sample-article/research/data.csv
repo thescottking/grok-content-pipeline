@@ -1,0 +1,60 @@
+table_id,table_title,label,value,denominator,pct,test_date,note
+robots_training,robots.txt blocks an AI training bot,Yes,200,3515,5.7,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)","Minimum. Checks only whether the homepage path is disallowed, only on sites whose robots.txt could be read, parsed with an RFC 9309 parser. A robots.txt rule shows intent, not what bots actually do."
+robots_training,robots.txt blocks an AI training bot,Rest of base,3315,3515,94.3,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)",
+robots_search,robots.txt blocks an AI search bot,Yes,35,3517,1.0,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)","Minimum. Checks only whether the homepage path is disallowed, only on sites whose robots.txt could be read, parsed with an RFC 9309 parser. A robots.txt rule shows intent, not what bots actually do."
+robots_search,robots.txt blocks an AI search bot,Rest of base,3482,3517,99.0,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)",
+gptbot,robots.txt blocks GPTBot,Yes,117,3516,3.3,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)","Minimum. Checks only whether the homepage path is disallowed, only on sites whose robots.txt could be read, parsed with an RFC 9309 parser. A robots.txt rule shows intent, not what bots actually do."
+gptbot,robots.txt blocks GPTBot,Rest of base,3399,3516,96.7,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)",
+oai,robots.txt blocks OAI-SearchBot,Yes,22,3517,0.6,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)","Minimum. Checks only whether the homepage path is disallowed, only on sites whose robots.txt could be read, parsed with an RFC 9309 parser. A robots.txt rule shows intent, not what bots actually do."
+oai,robots.txt blocks OAI-SearchBot,Rest of base,3495,3517,99.4,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)",
+split,Block GPTBot but allow OAI-SearchBot,Yes,97,3516,2.8,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)","Minimum. Checks only whether the homepage path is disallowed, only on sites whose robots.txt could be read, parsed with an RFC 9309 parser. A robots.txt rule shows intent, not what bots actually do."
+split,Block GPTBot but allow OAI-SearchBot,Rest of base,3419,3516,97.2,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)",
+train_not_search,Block a training bot but no search bot,Yes,165,3515,4.7,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)","Minimum. Checks only whether the homepage path is disallowed, only on sites whose robots.txt could be read, parsed with an RFC 9309 parser. A robots.txt rule shows intent, not what bots actually do."
+train_not_search,Block a training bot but no search bot,Rest of base,3350,3515,95.3,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)",
+blocked_both,ChatGPT blocked on both test days,Yes,34,132,25.8,"ChatGPT tests on Oct 29 and Oct 30, 2026","Only the sites a simulated-bot test flagged were tested, so never present this as a share of the full cohort. A 403 means ChatGPT could not open the page at that moment; it does not mean the brand is "
+blocked_both,ChatGPT blocked on both test days,Rest of base,98,132,74.2,"ChatGPT tests on Oct 29 and Oct 30, 2026",
+day1,Day-one ChatGPT verdicts on flagged sites,Opened,79,132,59.8,"Oct 29, 2026 (the inconsistent site first opened Oct 28)",flagged sites only; blocked 35 excludes the inconsistent site; blocked plus inconsistent = 36
+day1,Day-one ChatGPT verdicts on flagged sites,Blocked (403 or bot check),35,132,26.5,"Oct 29, 2026 (the inconsistent site first opened Oct 28)",flagged sites only; blocked 35 excludes the inconsistent site; blocked plus inconsistent = 36
+day1,Day-one ChatGPT verdicts on flagged sites,Fetch error,13,132,9.8,"Oct 29, 2026 (the inconsistent site first opened Oct 28)",flagged sites only; blocked 35 excludes the inconsistent site; blocked plus inconsistent = 36
+day1,Day-one ChatGPT verdicts on flagged sites,Unclear,4,132,3.0,"Oct 29, 2026 (the inconsistent site first opened Oct 28)",flagged sites only; blocked 35 excludes the inconsistent site; blocked plus inconsistent = 36
+day1,Day-one ChatGPT verdicts on flagged sites,"Inconsistent: opened Oct 28, blocked Oct 29 (excluded)",1,132,0.8,"Oct 29, 2026 (the inconsistent site first opened Oct 28)",flagged sites only; blocked 35 excludes the inconsistent site; blocked plus inconsistent = 36
+index,ChatGPT quoted the homepage from its search index after the 403,Yes,22,34,64.7,"Oct 29 and Oct 30, 2026","Read by hand from screenshots. Day-one and day-two prompts and sessions differed, so the days are not comparable. Shows ChatGPT can still describe a blocked site from older indexed copies, which may b"
+index,ChatGPT quoted the homepage from its search index after the 403,Rest of base,12,34,35.3,"Oct 29 and Oct 30, 2026",
+opened,Real ChatGPT opened sites a simulated-bot test flagged,Yes,79,132,59.8,"Oct 29, 2026","The simulated-bot test reached 3,263 sites and flagged 132. Simulated-bot tests send a bot user agent from a non-vendor IP; firewalls that verify vendor IPs treat them differently from the real bot. D"
+opened,Real ChatGPT opened sites a simulated-bot test flagged,Rest of base,53,132,40.2,"Oct 29, 2026",
+both_llms,Two-day blocked sites that publish llms.txt,Yes,13,34,38.2,"ChatGPT tests on Oct 29 and Oct 30, 2026; llms.txt rechecked live Oct 30, 2026","Small base. Only the sites a simulated-bot test flagged were tested, so never present this as a share of the full cohort. A 403 means ChatGPT could not open the page at that moment; it does not mean t"
+both_llms,Two-day blocked sites that publish llms.txt,Rest of base,21,34,61.8,"ChatGPT tests on Oct 29 and Oct 30, 2026; llms.txt rechecked live Oct 30, 2026",
+both_robots,Two-day blocked sites whose robots.txt allows AI search bots,Yes,29,31,93.5,"ChatGPT tests on Oct 29 and Oct 30, 2026","3 of the 34 had no readable robots.txt. Homepage path only. Only the sites a simulated-bot test flagged were tested, so never present this as a share of the full cohort. A 403 means ChatGPT could not "
+both_robots,Two-day blocked sites whose robots.txt allows AI search bots,Rest of base,2,31,6.5,"ChatGPT tests on Oct 29 and Oct 30, 2026",
+js,JavaScript-only homepages,Yes,71,3218,2.2,"Oct 28, 2026 (two residential passes plus headless render)",Confirmed across two crawl passes plus a headless render check; sites we could not classify are excluded. Homepage only.
+js,JavaScript-only homepages,Rest of base,3147,3218,97.8,"Oct 28, 2026 (two residential passes plus headless render)",
+no_h1,No H1 in server HTML,Yes,360,3236,11.1,"Oct 29, 2026 (two verified crawl passes)","Read from the HTML the server sends, before JavaScript runs. Elements added later by JavaScript are missed, which is also what most AI crawlers see."
+no_h1,No H1 in server HTML,Rest of base,2876,3236,88.9,"Oct 29, 2026 (two verified crawl passes)",
+no_org,No Organization schema in server HTML,Yes,1096,3236,33.9,"Oct 29, 2026 (two verified crawl passes)","Read from the HTML the server sends, before JavaScript runs. Elements added later by JavaScript are missed, which is also what most AI crawlers see. No proven effect on AI citations."
+no_org,No Organization schema in server HTML,Rest of base,2140,3236,66.1,"Oct 29, 2026 (two verified crawl passes)",
+faq,FAQPage schema,Yes,247,3236,7.6,"Oct 29, 2026 (two verified crawl passes)","Read from the HTML the server sends, before JavaScript runs. Elements added later by JavaScript are missed, which is also what most AI crawlers see."
+faq,FAQPage schema,Rest of base,2989,3236,92.4,"Oct 29, 2026 (two verified crawl passes)",
+swprod,SoftwareApplication or Product schema,Yes,423,3236,13.1,"Oct 29, 2026 (two verified crawl passes)","Read from the HTML the server sends, before JavaScript runs. Elements added later by JavaScript are missed, which is also what most AI crawlers see."
+swprod,SoftwareApplication or Product schema,Rest of base,2813,3236,86.9,"Oct 29, 2026 (two verified crawl passes)",
+llms,llms.txt adoption,Yes,1041,3233,32.2,"rechecked live Oct 30, 2026","Sites we could not read had lower llms.txt use, so use the readable denominator. Shows what sites do, not whether it works. No citation, prompt or log data."
+llms,llms.txt adoption,Rest of base,2192,3233,67.8,"rechecked live Oct 30, 2026",
+llms_full,llms-full.txt adoption,Yes,147,3236,4.5,"rechecked live Oct 30, 2026","No AI platform documents using llms-full.txt. Shows what sites do, not whether it works. No citation, prompt or log data."
+llms_full,llms-full.txt adoption,Rest of base,3089,3236,95.5,"rechecked live Oct 30, 2026",
+llms_block,llms.txt publishers that block AI search bots in robots.txt,Yes,4,1035,0.4,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)","Very small count; use as a supporting line only. Minimum. Checks only whether the homepage path is disallowed, only on sites whose robots.txt could be read, parsed with an RFC 9309 parser. A robots.tx"
+llms_block,llms.txt publishers that block AI search bots in robots.txt,Rest of base,1031,1035,99.6,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)",
+llms_block_train,llms.txt publishers that block AI training bots in robots.txt,Yes,75,1035,7.2,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)","Not a contradiction: training and answer access are separate jobs. Minimum. Checks only whether the homepage path is disallowed, only on sites whose robots.txt could be read, parsed with an RFC 9309 p"
+llms_block_train,llms.txt publishers that block AI training bots in robots.txt,Rest of base,960,1035,92.8,"robots.txt rechecked live Oct 30, 2026 (RFC 9309 parser)",
+compare,"Compare, vs or alternatives pages",Yes,580,3235,17.9,"Oct 29, 2026 (two verified crawl passes)","Matched on link words such as 'vs' and 'alternatives', so it may include some unrelated pages and miss differently named ones. Presence only, no citation data."
+compare,"Compare, vs or alternatives pages",Rest of base,2655,3235,82.1,"Oct 29, 2026 (two verified crawl passes)",
+pricing,Pricing page,Yes,1207,3234,37.3,"Oct 29, 2026 (two verified crawl passes)",Minimum: only common pricing URLs and links were checked. Presence only.
+pricing,Pricing page,Rest of base,2027,3234,62.7,"Oct 29, 2026 (two verified crawl passes)",
+cmp_pr,Compare page and pricing page,Yes,407,3233,12.6,"Oct 29, 2026 (two verified crawl passes)",Inherits the compare and pricing caveats.
+cmp_pr,Compare page and pricing page,Rest of base,2826,3233,87.4,"Oct 29, 2026 (two verified crawl passes)",
+case,Case studies page,Yes,1759,3232,54.4,"Oct 29, 2026 (two verified crawl passes)",Link and URL match. Presence only.
+case,Case studies page,Rest of base,1473,3232,45.6,"Oct 29, 2026 (two verified crawl passes)",
+docs,Docs page,Yes,537,3236,16.6,"Oct 29, 2026 (two verified crawl passes)",Link and URL match. Presence only.
+docs,Docs page,Rest of base,2699,3236,83.4,"Oct 29, 2026 (two verified crawl passes)",
+trust,Trust or security page,Yes,1369,3233,42.3,"Oct 29, 2026 (two verified crawl passes)",Link and URL match. Presence only.
+trust,Trust or security page,Rest of base,1864,3233,57.7,"Oct 29, 2026 (two verified crawl passes)",
+sitemap,Sitemap updated in the last 90 days,Yes,2127,3229,65.9,"Oct 29, 2026 (two verified crawl passes)",Weak signal: sitemap dates are often auto-stamped by the CMS.
+sitemap,Sitemap updated in the last 90 days,Rest of base,1102,3229,34.1,"Oct 29, 2026 (two verified crawl passes)",
