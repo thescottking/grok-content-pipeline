@@ -246,7 +246,7 @@ Create one only after the owner says yes to that routine.
 ## 7. Dry run (draft only, no publish)
 
 1. Copy `_inbox/_TEMPLATE/` to `_inbox/setup-dry-run/`. Fill a short
-   test topic (two sourced findings is enough) and set `status: ready`.
+   test topic (three sourced findings, the research gate's minimum) and set `status: ready`.
 2. Run it through the Orchestrator up to the final review: outline,
    draft, humanizer, fact-check, visuals, links, a WordPress **draft**,
    and social drafts.
