@@ -22,15 +22,6 @@ Human minutes weren't recorded before v1.1. From v1.1 on, every step logs bot an
 - "157 of 169 B2B homepage headlines would work on a competitor's site": cited for **1 of 4** prompts, the one closest to its stat (157-of-169.../performance.md).
 - Perplexity and ChatGPT were **not run** in any check. Logged-out Perplexity often walls the session, and a signed-in ChatGPT session can't be tested logged out. Every result above is Google AI Mode only.
 
-## Search (Google Search Console)
-| Page | Window | Clicks | Impressions | Avg position | Source |
-|---|---|---|---|---|---|
-| /how-to-clean-up-raw-transcriptions (after refresh) | Nov 3-9 | 3 | 102 | 5.4 | _gsc-2026-11-09.md (the URL had traffic before the refresh, so this isn't a before/after claim) |
-| /why-cant-chatgpt-access-my-website | Nov 2-9 | 1 | 96 | 5.7 | _gsc-2026-11-09.md |
-| /stop-political-texts-telemarketing-calls | Oct 7-Nov 9 | 4 | 528 | 10.4 | stop-political-texts-telemarketing-calls/performance.md |
-| /what-an-ai-visibility-audit-includes | Oct 6-Nov 2 | 0 | 89 | 10.2 | _gsc-2026-11-02.md (flagged for refresh) |
-| /aeo-tactics-that-do-not-work | Oct 29-Nov 2 | 0 | 3 | 78.3 | _gsc-2026-11-02.md |
-
 ## Social (first week)
 - Pillar LinkedIn post: 335 impressions, 207 members reached, 6 article views. The X post: 74 impressions, 2 replies (aeo-crawl-pillar/performance.md).
 - Earlier "157 headlines failed" hook: 454 impressions and 51 article views in its first week (same file, "What worked").
